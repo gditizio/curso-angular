@@ -1,0 +1,11 @@
+<div>
+  <p-button label="Color rojo"  styleClass="p-button-danger" (onClick) = "text_color = 'text-red-500'" [disabled] = "button_disabled"></p-button>
+  <p-button label="Color verde"  styleClass="p-button-success" (onClick) = "text_color = 'text-green-500'" [disabled] = "button_disabled" class="mx-2"></p-button>
+  <p-button label="Color azul"  styleClass="p-button-primary" (onClick) = "text_color = 'text-primary'" [disabled] = "button_disabled"></p-button>
+</div>
+
+<p [class]="text_color">Texto cambiante de color</p>
+
+<p>{{text_color}}</p>
+
+<p-button label={{text_button}} class="p-button-primary" (onClick)="buttonDisable()"></p-button>

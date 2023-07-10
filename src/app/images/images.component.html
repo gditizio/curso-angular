@@ -1,0 +1,14 @@
+
+
+<div>
+  <p-button label="Imagen 1" styleClass="p-button-primary" (onClick)="src_img = 'https://images.pexels.com/photos/15273085/pexels-photo-15273085/free-photo-of-mono-animales-perros-al-aire-libre.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">
+
+  </p-button>
+  
+  <p-button label="Imagen 2" styleClass="p-button-danger mx-2" (onClick)="src_img = 'https://images.pexels.com/photos/13680493/pexels-photo-13680493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">
+    
+  </p-button>
+</div>
+
+
+<img [src]="src_img" alt="">
